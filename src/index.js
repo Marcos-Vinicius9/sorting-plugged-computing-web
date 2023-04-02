@@ -5,8 +5,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Home from'./screens/Home/home.jsx';
 import LevelSelection from './screens/LevelSelection/levelSelection.jsx';
+
 import Level1Page1 from './screens/levels/level1/level1-page1/level1_page1.jsx';
 import Level1Page2 from './screens/levels/level1/level1-page2/level1_page2.jsx';
+import Level1Page3 from './screens/levels/level1/level1-page3/level1_page3.jsx';
 
 import Level2Page1 from './screens/levels/level2/level2_page1';
 import Level2Page2 from './screens/levels/level2/level2_page2';
@@ -30,6 +32,9 @@ const router = createBrowserRouter([
   },
   {path:'/level1-2',
   element: <Level1Page2 />
+  },
+  {path:'/level1-3',
+  element: <Level1Page3 />
   },
  
 

@@ -48,3 +48,19 @@
     margin-top: 1rem;
     width: 35%;
   }
+
+  @media screen and (max-width: 768px) {
+  .container div img {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    width: 90%;
+  }
+}
+
+
