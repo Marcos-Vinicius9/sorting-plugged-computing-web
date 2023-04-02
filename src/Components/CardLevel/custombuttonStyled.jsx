@@ -34,5 +34,4 @@ background-color: #F2C824;
 .arrow{
     font-size: 60px; 
 }
-    
 `

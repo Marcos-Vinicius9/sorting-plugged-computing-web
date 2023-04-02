@@ -1,4 +1,5 @@
 import { Card } from "./custombuttonStyled";
+import PropTypes from 'prop-types';
 const CardLevel = (props) => {
     return(
         <Card>
@@ -15,4 +16,13 @@ const CardLevel = (props) => {
         </Card>
     );
 }
+
+CardLevel.propTypes = {
+    routerLink: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    level: PropTypes.number.isRequired,
+    description: PropTypes.string.isRequired
+  }; 
+
+
 export default CardLevel;
