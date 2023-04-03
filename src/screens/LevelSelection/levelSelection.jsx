@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import styles from './levelSelection.module.css';
 import CardLevel from '../../Components/CardLevel/cardLevel';
 import level1 from '../../assets/images/levelSelection/level1.png';
@@ -7,6 +8,9 @@ import level4 from '../../assets/images/levelSelection/level4.png';
 const levelSelection = () =>{
     return (
         <div class={styles.container}>
+          <Helmet>
+              <title>Seleção de fases</title>
+          </Helmet>
             <div class={styles.content}>
                 <p class={styles.title}>Seleção de fase</p>
                 <CardLevel level={1} image={level1} description="descrição da fase " routerLink="/level1-1"/>

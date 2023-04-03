@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { AppWrapper, QuizWrapper } from './questionScreenStyled';
 import Congratulations from '../Congratulations/congratulations';
 
@@ -79,6 +80,9 @@ const Quiz = (props) => {
 
     return (
       <QuizWrapper>
+          <Helmet>
+              <title>{ `Fase ${ props.level}` }</title>
+          </Helmet>
         {currentQuestion.isVideo ? showVideo(currentQuestion.video.url) : showImage(currentQuestion.image.url)}
         <h2>{currentQuestion.question}</h2>
         <ul>

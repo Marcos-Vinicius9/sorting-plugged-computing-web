@@ -1,12 +1,16 @@
 import { Container } from "./customLevelScreenStyled";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faAngleLeft, faAngleRight} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse, faAngleLeft, faAngleRight} from '@fortawesome/free-solid-svg-icons';
 
+import { Helmet } from "react-helmet";
 
 const levelScreen = (props) =>{
     return (
         <Container>
+            <Helmet>
+            <title>{ `Fase ${ props.level}` }</title>
+            </Helmet>
             <div><a href={props.previousLevel}><FontAwesomeIcon icon={faAngleLeft} size="3x"/></a></div>
             <div class="content">
                 <h3><strong>FASE {props.level}</strong></h3>
