@@ -4,9 +4,8 @@ export const Container = styled.div`
 
 
 & .content {
-    height:100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
@@ -42,22 +41,6 @@ export const Container = styled.div`
     padding: 0;
   }
   
-  & .nav-buttons {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 0;
-    padding: 10px;
-  }
-  
-  & .nav-btn {
-    border-radius: 50%;
-    background-color: #07377A
-    width: 40px;
-    height: 40px;
-    text-align: center;
-  }
-  
   & a {
     text-decoration: none;
     color: #fff;
@@ -67,5 +50,31 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
   }
+
+  .containerButton{
+    background-color:#07377A;
+    padding:10px;
+    border-radius:50%;
+  }
+
+  @media(max-width: 900px) and (min-width:770px){
+    & div img{
+    width:80%;
+    }
+}
+
+  @media(max-width: 1200px) and (min-width:900px){
+    & div img{
+      width:80%;
+    } 
+  }
+
+  @media(max-width: 770px) and (min-width:200px){
+  & div img{
+    width:80%;
+  }
+}
+
+`;
+
   
-`

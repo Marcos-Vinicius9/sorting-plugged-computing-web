@@ -7,7 +7,7 @@ import { faHouse} from '@fortawesome/free-solid-svg-icons'
 const Congratulations = (props) => {
     const level = props.level;
 
-    const element = <FontAwesomeIcon icon={faHouse} size="3x"/>
+    const element = <FontAwesomeIcon icon={faHouse} size="2x"/>
 
 
     return(
@@ -22,8 +22,14 @@ const Congratulations = (props) => {
                 <span>Você concluiu a FASE {level} do aplicativo Ordenação!</span>
             </div>
 
-            <div class="nav-buttons w-100">
-                <div class="nav-btn"><a href="/LevelSelection">{element}</a></div>
+            <div class="nav-buttons ">
+                <a href="/LevelSelection">
+                    <div class="nav-btn">
+                    <div class="containerButton">
+                        {element}
+                    </div>
+                </div>
+                </a>
             </div>
             </div>
         </Container>
