@@ -5,7 +5,7 @@ const CardLevel = (props) => {
         <Card>
             <div class="level">
                 <a href={props.routerLink}>
-                <img src={props.image} alt="Fase 1" />
+                <img src={props.image} alt="" />
                 <div class="description">
                 <p><strong>FASE {props.level}</strong></p>
                 <p>{props.description}</p>
