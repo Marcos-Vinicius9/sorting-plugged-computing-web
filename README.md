@@ -1,1 +1,1 @@
-<h1> Versão Web do aplicativo Computação Plugada Ordenação! </h1>
+<h1> Versão Web do aplicativo Computação Plugada Ordenação. </h1>
