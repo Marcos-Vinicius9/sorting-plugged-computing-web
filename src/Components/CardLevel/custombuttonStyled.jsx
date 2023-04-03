@@ -27,11 +27,44 @@ background-color: #F2C824;
   text-align: start;
 }
 
-.level a img {
+& .level a img {
   width: 20%;
 }
 
-.arrow{
+& .arrow{
     font-size: 60px; 
 }
+
+@media(max-width: 770px) and (min-width:340px){
+  width: 330px;
+
+  & .description{
+    width:150px;
+    margin: 0;
+  }
+
+  & p{
+    font-size:1.5rem;
+  }
+
+}
+
+@media(max-width: 900px) and (min-width:770px){
+  width: 550px;
+
+  & .description{
+    width:250px;
+    margin: 0;
+  }
+
+  & p{
+    font-size:2rem;
+  }
+
+}
+
+@media(max-width: 1200px) and (min-width:900px){
+  width: 600px;
+}
+
 `
