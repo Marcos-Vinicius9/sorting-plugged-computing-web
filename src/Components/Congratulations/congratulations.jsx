@@ -19,7 +19,7 @@ const Congratulations = (props) => {
 
             <div class="text-box">
                 <h2><strong>PARABÉNS</strong></h2>
-                <span>Você concluiu a FASE {level} do aplicativo Binários!</span>
+                <span>Você concluiu a FASE {level} do aplicativo Ordenação!</span>
             </div>
 
             <div class="nav-buttons w-100">
