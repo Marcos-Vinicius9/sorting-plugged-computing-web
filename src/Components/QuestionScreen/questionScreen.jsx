@@ -80,7 +80,7 @@ const Quiz = (props) => {
 
     return (
       <QuizWrapper>
-          <Helmet>
+          <Helmet htmlAttributes={{lang:'pt-Br'}}>
               <title>{ `Fase ${ props.level}` }</title>
           </Helmet>
         {currentQuestion.isVideo ? showVideo(currentQuestion.video.url) : showImage(currentQuestion.image.url)}

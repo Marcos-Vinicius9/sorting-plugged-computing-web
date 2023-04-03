@@ -10,7 +10,7 @@ import styles from './home.module.css';
 const index = () =>{
     return(
         <div class={styles.container}>
-            <Helmet>
+            <Helmet htmlAttributes={{lang:'pt-Br'}}>
                 <title>Computação Plugada Ordenação</title>
             </Helmet>
             <div class={styles.content}>

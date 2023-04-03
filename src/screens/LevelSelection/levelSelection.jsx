@@ -8,7 +8,7 @@ import level4 from '../../assets/images/levelSelection/level4.png';
 const levelSelection = () =>{
     return (
         <div class={styles.container}>
-          <Helmet>
+          <Helmet htmlAttributes={{lang:'pt-Br'}}>
               <title>Seleção de fases</title>
           </Helmet>
             <div class={styles.content}>

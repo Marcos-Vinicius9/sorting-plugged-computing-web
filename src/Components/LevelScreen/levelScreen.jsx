@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 const levelScreen = (props) =>{
     return (
         <Container>
-            <Helmet>
+            <Helmet htmlAttributes={{lang:'pt-Br'}}>
             <title>{ `Fase ${ props.level}` }</title>
             </Helmet>
             <div><a href={props.previousLevel}><FontAwesomeIcon icon={faAngleLeft} size="3x"/></a></div>
