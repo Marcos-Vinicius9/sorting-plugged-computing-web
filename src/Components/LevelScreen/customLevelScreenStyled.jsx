@@ -2,15 +2,16 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
+  justify-content:center;
 
 & .content {
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
 }
@@ -20,7 +21,7 @@ export const Container = styled.div`
 }
 
 & h3 {
-    color: #07377A;
+  color: #07377A;
   margin: 1rem 0 2rem 0;
 }
 
@@ -37,5 +38,19 @@ export const Container = styled.div`
   color: green;
   font-size: 3rem;
 }
+
+@media(max-width: 770px) and (min-width:340px){
+  
+ 
+
+  & div img{
+    width:80%;
+  }
+
+  & p{
+    width: 80%;
+  }
+}
+
 
 `

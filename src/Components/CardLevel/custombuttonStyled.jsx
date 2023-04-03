@@ -64,7 +64,7 @@ background-color: #F2C824;
 }
 
 @media(max-width: 1200px) and (min-width:900px){
-  width: 600px;
+  width: 600px; 
 }
 
 `
