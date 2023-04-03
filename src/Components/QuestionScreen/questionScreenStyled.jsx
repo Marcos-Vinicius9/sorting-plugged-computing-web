@@ -48,10 +48,6 @@ export const QuizWrapper = styled.div`
     &.selected {
       background-color: red;
     }
-
-    &:hover {
-      background-color: #ddd;
-    }
   }
 
   img {
@@ -59,4 +55,43 @@ export const QuizWrapper = styled.div`
     max-width: 500px;
     margin-bottom: 20px;
   }
+
+  iframe{
+    max-height: 700px;
+    margin: 20px 0;
+  }
+
+  @media(max-width: 770px) and (min-width:340px){
+    height:100%;
+
+    li{
+      width:350px;
+      font-size: 0.8rem;
+    }
+
+    iframe{
+      width: 100%;
+      max-height: 380px;
+    }
+    
+}
+
+@media(max-width: 900px) and (min-width:770px){
+  width: 550px;
+
+  & .description{
+    width:250px;
+    margin: 0;
+  }
+
+  & p{
+    font-size:2rem;
+  }
+
+}
+
+@media(max-width: 1200px) and (min-width:900px){
+  width: 600px; 
+}
+
 `;
