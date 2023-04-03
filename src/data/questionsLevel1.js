@@ -2,7 +2,10 @@ const questions = [
   {
     id: 1,
     question: "Frequentemente, os computadores devem ordenar listas de coisas. Por que é importante colocar as coisas em ordem?",
-    image: "https://via.placeholder.com/500x200",
+    image: {
+      name: null,
+      url: "l1q1_a"
+    },
     options: [
       { id: 1, text: "Para encontrar as coisas rapidamente", answerIndex: true },
       { id: 2, text: "Para deixar as coisas desorganizadas", answerIndex: false },

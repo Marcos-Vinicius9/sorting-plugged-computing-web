@@ -2,16 +2,17 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
+
 & .content {
+    height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0;
-  }
+}
   
   & div img {
-    width: 25%;
+    width: 40%;
     margin: 1rem;
   }
   
@@ -21,7 +22,6 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     text-align: center;
     padding: 10px;
   }
@@ -32,7 +32,7 @@ export const Container = styled.div`
   
   & h2,h3 {
     color: #07377A;
-    margin: 1rem;
+    margin: 10px;
   }
   
   & span {

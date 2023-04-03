@@ -1,12 +1,12 @@
 import QuestionScreen from '../../../../Components/QuestionScreen/questionScreen';
-import level1_3 from '../../../../assets/images/levels/level1/level1_3.png';
+import questionsLevel1 from '../../../../data/questionsLevel1.js';
 
 
-const level2_page3 = () =>{
+const level1_page3 = () =>{
     return(
-        <QuestionScreen image={level1_3}/>
+        <QuestionScreen questions={questionsLevel1} level={1}/>
     );
 }
 
 
-export default level2_page3;
+export default level1_page3;

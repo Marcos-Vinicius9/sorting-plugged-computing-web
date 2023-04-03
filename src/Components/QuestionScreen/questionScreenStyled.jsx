@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const AppWrapper = styled.div`
-  background-color: #F2C824;
+
   min-height: 100vh;
   display: flex;
   justify-content: center;

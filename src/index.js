@@ -13,12 +13,18 @@ import Level1Page3 from './screens/levels/level1/level1-page3/level1_page3.jsx';
 import Level2Page1 from './screens/levels/level2/level2_page1';
 import Level2Page2 from './screens/levels/level2/level2_page2';
 import Level2Page3 from './screens/levels/level2/level2_page3';
+import Level2Page4 from './screens/levels/level2/level2_page4';
+
 
 import Level3Page1 from './screens/levels/level3/level3_page1';
 import Level3Page2 from './screens/levels/level3/level3_page2';
 import Level3Page3 from './screens/levels/level3/level3_page3';
+import Level3Page4 from './screens/levels/level3/level3_page4';
+
 
 import Level4Page1 from './screens/levels/level4/level4_page1';
+import Level4Page2 from './screens/levels/level4/level4_page2';
+
 const router = createBrowserRouter([
   {
     path:'/',
@@ -47,6 +53,10 @@ const router = createBrowserRouter([
   {path:'/level2-3',
   element: <Level2Page3 />
   },
+  {path:'/level2-4',
+  element: <Level2Page4 />
+  },
+
 
   {path:'/level3-1',
   element: <Level3Page1 />
@@ -57,9 +67,16 @@ const router = createBrowserRouter([
   {path:'/level3-3',
   element: <Level3Page3 />
   },
+  {path:'/level3-4',
+  element: <Level3Page4/>
+  },
+
 
   {path:'/level4-1',
   element: <Level4Page1 />
+  },
+  {path:'/level4-2',
+  element: <Level4Page2 />
   },
 ])
 
