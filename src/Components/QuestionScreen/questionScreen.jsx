@@ -57,6 +57,11 @@ const Quiz = (props) => {
     return null;
   };
 
+  const showVideo = url =>{
+    return <iframe src={`https://drive.google.com/file/d/${url}/preview`} width="640" height="480" allow="autoplay"></iframe>
+
+  }
+  
 
 
   const handleAnswerClick = (selectedAnswerIndex) => {
@@ -74,7 +79,7 @@ const Quiz = (props) => {
 
     return (
       <QuizWrapper>
-        {showImage(currentQuestion.image.url)}
+        {currentQuestion.isVideo ? showVideo(currentQuestion.video.url) : showImage(currentQuestion.image.url)}
         <h2>{currentQuestion.question}</h2>
         <ul>
           {currentQuestion.options.map(({ id, text }, index) => (

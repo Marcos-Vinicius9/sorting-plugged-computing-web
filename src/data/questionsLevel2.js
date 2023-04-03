@@ -29,6 +29,19 @@ const questions = [
       { id: 4, text: "E", answerIndex: false }  
     ],
     
+  },
+  {
+    id: 3,
+    question: "Você notou que faz várias comparações para descobrir em qual posição irá colocar a carta? Veja o vídeo a seguir para aprender mais.",
+    isVideo: true,
+    video:{
+      name: null,
+      url: "1Zoa2NdmM3lzCsn-5zHYZlJWXZE1EnkdY"
+    },
+    options: [
+      { id: 1, text: "Já assisti!", answerIndex: true }, 
+    ],
+    
   }
 ];
 
