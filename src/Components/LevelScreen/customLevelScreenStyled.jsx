@@ -25,6 +25,10 @@ export const Container = styled.div`
   margin: 1rem 0 2rem 0;
 }
 
+& a{
+  margin: 0 20px;
+}
+
 & p {
   color: #07377A;
   width: 35%;
