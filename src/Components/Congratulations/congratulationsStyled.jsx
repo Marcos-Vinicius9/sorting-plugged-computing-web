@@ -57,6 +57,12 @@ export const Container = styled.div`
     border-radius:50%;
   }
 
+  .nav-buttons{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+  }
+
   @media(max-width: 900px) and (min-width:770px){
     & div img{
     width:80%;

@@ -101,7 +101,7 @@ const Quiz = (props) => {
   if (currentQuestionIndex >= questions.length) {
     return (
       <AppWrapper style={{backgroundColor:"#F2C824"}}>
-        <Congratulations level ={level}/>
+        <Congratulations level ={level} levelReload={`/level${level}-1`}/>
       </AppWrapper>
     );
   } else {

@@ -1,14 +1,14 @@
 import { Container } from "./congratulationsStyled";
 import congratulations from '../../assets/images/congratulations/win_level.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse} from '@fortawesome/free-solid-svg-icons'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse} from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightRotate} from '@fortawesome/free-solid-svg-icons';
 
 const Congratulations = (props) => {
     const level = props.level;
 
-    const element = <FontAwesomeIcon icon={faHouse} size="2x"/>
-
+    const houseIcon = <FontAwesomeIcon icon={faHouse} size="2x"/>
+    const reloadIcon = <FontAwesomeIcon icon={faArrowRightRotate} size="2x"/>
 
     return(
         <Container>
@@ -26,7 +26,14 @@ const Congratulations = (props) => {
                 <a href="/LevelSelection">
                     <div class="nav-btn">
                     <div class="containerButton">
-                        {element}
+                        {houseIcon}
+                    </div>
+                </div>
+                </a>
+                <a href={props.levelReload}>
+                    <div class="nav-btn">
+                    <div class="containerButton">
+                        {reloadIcon}
                     </div>
                 </div>
                 </a>
