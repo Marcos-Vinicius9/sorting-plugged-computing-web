@@ -145,7 +145,7 @@ const questions = [
       },
       {
         id: 13,
-        question: "Você notou que vai sortear uma carta e depois comprar cada uma das cartas restantes com ela para descobrir em qual posição irá colocar a carta. Veja o vídeo acima para aprender mais sobre o método de ordenação Quicksort.",
+        question: "Você notou que vai sorteando uma carta e depois compara cada uma das cartas restantes com ela para descobrir em qual posição irá colocar a carta. Veja o vídeo acima para aprender mais sobre o método de ordenação Quicksort.",
         isWhiteBackground : true,
         isVideo: true,
         video:{
