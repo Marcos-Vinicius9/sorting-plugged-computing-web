@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Container } from "./congratulationsStyled";
 import congratulations from '../../assets/images/congratulations/win_level.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -23,20 +24,20 @@ const Congratulations = (props) => {
             </div>
 
             <div class="nav-buttons ">
-                <a href="/LevelSelection">
+                <Link to={"/levelSelection"} >
                     <div class="nav-btn">
                     <div class="containerButton">
                         {houseIcon}
                     </div>
-                </div>
-                </a>
-                <a href={props.levelReload}>
+                    </div>
+                </Link>
+                <Link to={props.levelReload} >
                     <div class="nav-btn">
                     <div class="containerButton">
                         {reloadIcon}
                     </div>
                 </div>
-                </a>
+                </Link>
             </div>
             </div>
         </Container>

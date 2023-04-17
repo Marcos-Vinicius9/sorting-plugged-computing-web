@@ -1,17 +1,19 @@
+import { Link } from "react-router-dom";
+
 import { Card } from "./custombuttonStyled";
 import PropTypes from 'prop-types';
 const CardLevel = (props) => {
     return(
         <Card>
             <div class="level">
-                <a href={props.routerLink}>
+                <Link to={props.routerLink} >
                 <img src={props.image} alt="" />
                 <div class="description">
                 <p><strong>FASE {props.level}</strong></p>
                 <p>{props.description}</p>
                 </div>
                 <p class="arrow">></p>
-                </a>
+                </Link>
             </div>
         </Card>
     );
