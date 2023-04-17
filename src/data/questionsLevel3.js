@@ -1,7 +1,7 @@
 const questions = [
     {
       id: 1,
-      question: "Observando as cartas acima, quais são menores que a carta numero 4?",
+      question: "Observando as cartas acima, quais são menores que a carta número 4?",
       image:{
         name: null,
         url: "l3q1_a"
@@ -39,7 +39,7 @@ const questions = [
       },
       {
         id: 4,
-        question: "Observando as cartas acima, qual a carta que ficará a direita da carta 2?",
+        question: "Observando as cartas acima, qual a carta que ficará à direita da carta 2?",
         image: {
             name:null,
             url:"l3q2_c"
@@ -107,7 +107,7 @@ const questions = [
       },
       {
         id: 10,
-        question: "Considerando o grupo que restou, vamos sortear outra vez uma das cartas. Por exemplo: suponha que a carta soreada seja a carta número 7. ",
+        question: "Considerando o grupo que restou, vamos sortear outra vez uma das cartas. Por exemplo: suponha que a carta sorteada seja a carta número 7. ",
         isWhiteBackground : true,
         image: {
             name:null,

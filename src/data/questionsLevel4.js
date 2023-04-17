@@ -53,7 +53,7 @@ const questions = [
       },
       {
         id: 5,
-        question: "Por isso é importante a utilização da ordenação, pois facilita a localização de uma informação especifica e também a identificação de informações duplicadas (ex: um nome que aparece mais de uma vez em uma lista)",
+        question: "Por isso é importante a utilização da ordenação, pois facilita a localização de uma informação específica e também a identificação de informações duplicadas (ex: um nome que aparece mais de uma vez em uma lista).",
         isWhiteBackground : true,
         image: {
             name:null,
@@ -77,7 +77,7 @@ const questions = [
       },
       {
         id: 7,
-        question: "Vimos que a ordenação pode ser feita de várias formas. Essas formas de ordenar são chamadas de algoritmos de ordenação. Vimos, por exemplo, no Nível 2 o algoritmo de ordenação por inserção (Insertion Sort) e no Nível 3 o algoritmo de ordenação rápida ou Quicksort.",
+        question: "Vimos que a ordenação pode ser feita de várias formas. Essas formas de ordenar são chamadas de algoritmos de ordenação. Vimos, por exemplo, na fase 2 o algoritmo de ordenação por inserção (Insertion Sort) e na fase 3 o algoritmo de ordenação rápida ou Quicksort.",
         isWhiteBackground : true,
         image: {
             name:null,
@@ -125,7 +125,7 @@ const questions = [
       },
       {
         id: 11,
-        question: "Lembre que em cada ordenação se escolhia uma carta e se via quais as cartas menores e as maiores que ela até que restasse apenas uma carta. Esse principio de dividir o problema em partes até resolvê-lo por completo é chamado de Divisão e Conquista.",
+        question: "Lembre que em cada ordenação se escolhia uma carta e se via quais as cartas menores e as maiores que ela, até que restasse apenas uma carta. Esse princípio de dividir o problema em partes até resolvê-lo por completo é chamado de Divisão e Conquista.",
         isWhiteBackground : true,
         image: {
             name:null,
