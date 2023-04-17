@@ -59,7 +59,7 @@ const Quiz = (props) => {
   };
 
   const showVideo = url =>{
-    return <iframe src={`https://drive.google.com/file/d/${url}/preview`} width="620" height="420" allow="autoplay"></iframe>
+    return <iframe width="560" height="315" src={`https://www.youtube.com/embed/${currentQuestion.video.url}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
   }
   
