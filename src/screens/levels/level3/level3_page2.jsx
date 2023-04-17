@@ -7,7 +7,7 @@ const level3_page2 = ()=> {
         previousLevel="/level3-1"
         level={3}
         image={level3_2}
-        description="Considere o conjunto de cartas acima o qual está desordenado. "
+        description="Considere o conjunto de cartas acima e que está desordenado. "
         nextLevel="/level3-3"
         />
     )

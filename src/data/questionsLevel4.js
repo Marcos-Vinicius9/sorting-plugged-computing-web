@@ -1,7 +1,7 @@
 const questions = [
   {
     id: 1,
-    question: "Veja o vídeo acima para saber quantas comparações são realizadas pelos algoritmos e qual é o algoritmo mais rápido.",
+    question: "Veja o vídeo acima para saber quantas comparações são realizadas pelos algoritmos e como é o desempenho de cada algoritmo ao ordenar alguns dados.",
     isVideo: true,
       video:{
         name:null,
@@ -101,7 +101,7 @@ const questions = [
       },
       {
         id: 9,
-        question: "Você lembra que o metade de ordenação Quicksort a gente dividia o conjunto de números em grupos menores e, em seguida ficara repetindo o mesmo passo a passo até o conjunto de números ser ordenado? Esse conceito é chamado de recursão.",
+        question: "Você lembra que no método de ordenação Quicksort a gente dividia o conjunto de números em grupos menores e, em seguida ficava repetindo o mesmo passo a passo até o conjunto de números ser ordenado? Esse conceito é chamado de recursão.",
         isWhiteBackground : true,
         image: {
             name:null,
@@ -137,7 +137,7 @@ const questions = [
       },
       {
         id: 12,
-        question: "Segundo observamos no vídeo, e segundo estudos da Ciência da Computação, o Quicksort é mais rápido que a Ordenação por inserção.",
+        question: "Segundo observamos no vídeo, e segundo estudos da Ciência da Computação, o Quicksort, em geral, é mais rápido que a Ordenação por inserção.",
         image: {
             name:null,
             url:"l4q3_i"

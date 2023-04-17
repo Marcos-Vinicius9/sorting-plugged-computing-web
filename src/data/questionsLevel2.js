@@ -32,7 +32,7 @@ const questions = [
   },
   {
     id: 3,
-    question: "Você notou que faz várias comparações para descobrir em qual posição irá colocar a carta? Veja o vídeo a seguir para aprender mais.",
+    question: "Você notou que faz várias comparações para descobrir em qual posição irá colocar a carta? Veja o vídeo acima para aprender mais.",
     isVideo: true,
     video:{
       name: null,

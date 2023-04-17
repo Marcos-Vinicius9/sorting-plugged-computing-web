@@ -1,7 +1,7 @@
 const questions = [
     {
       id: 1,
-      question: "Observando as cartas abaixo, quias cartas são menores que a carta numero 4?",
+      question: "Observando as cartas acima, quais são menores que a carta numero 4?",
       image:{
         name: null,
         url: "l3q1_a"
@@ -39,7 +39,7 @@ const questions = [
       },
       {
         id: 4,
-        question: "Observando as cartas abaixo, qual a carta que ficará a direita da carta 2?",
+        question: "Observando as cartas acima, qual a carta que ficará a direita da carta 2?",
         image: {
             name:null,
             url:"l3q2_c"
@@ -80,7 +80,7 @@ const questions = [
       },
       {
         id: 8,
-        question: "Observando as cartas abaixo, qual carta ficará à esquerda da carta 5?",
+        question: "Observando as cartas acima, qual carta ficará à esquerda da carta 5?",
         image: {
             name:null,
             url:"l3q3_c"
