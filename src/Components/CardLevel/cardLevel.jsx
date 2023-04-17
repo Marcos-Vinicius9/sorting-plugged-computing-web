@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleRight} from '@fortawesome/free-solid-svg-icons';
 
+import { Link } from "react-router-dom";
 import { Card } from "./custombuttonStyled";
 import PropTypes from 'prop-types';
 const CardLevel = (props) => {
@@ -12,7 +14,7 @@ const CardLevel = (props) => {
                 <p><strong>FASE {props.level}</strong></p>
                 <p>{props.description}</p>
                 </div>
-                <p class="arrow">></p>
+                <p class="arrow"><FontAwesomeIcon icon={faAngleRight} size="1   x"/></p>
                 </Link>
             </div>
         </Card>
