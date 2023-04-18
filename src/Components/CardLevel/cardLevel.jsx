@@ -12,7 +12,7 @@ const CardLevel = (props) => {
                 <img src={props.image} alt="" />
                 <div class="description">
                 <p><strong>FASE {props.level}</strong></p>
-                <p>{props.description}</p>
+                <p class="description-text">{props.description}</p>
                 </div>
                 <p class="arrow"><FontAwesomeIcon icon={faAngleRight} size="1   x"/></p>
                 </Link>

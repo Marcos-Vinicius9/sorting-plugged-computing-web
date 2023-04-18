@@ -17,6 +17,10 @@ background-color: #F2C824;
     margin: 0;
   }
 
+  .description-text{
+    font-size:18px;
+  }
+
   & .level a {
   display: flex;
   justify-content: center;
