@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import toast from 'react-simple-toasts';
 import { Helmet } from 'react-helmet';
 import { AppWrapper, QuizWrapper } from './questionScreenStyled';
 import Congratulations from '../Congratulations/congratulations';
@@ -51,6 +52,10 @@ const Quiz = (props) => {
   
   const level = props.level;
 
+  const tryAgain = () => toast('Tente outra vez.', {
+    time: 2000,
+  });
+
   const showImage = url => {
     if (url) {
       return <img src={getImagens(url)} />;
@@ -72,6 +77,8 @@ const Quiz = (props) => {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
       setSelectedAnswer(selectedAnswerIndex);
+      tryAgain();
+
     }
   }
 

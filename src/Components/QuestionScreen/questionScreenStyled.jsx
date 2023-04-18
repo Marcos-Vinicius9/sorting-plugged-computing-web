@@ -16,6 +16,11 @@ export const QuizWrapper = styled.div`
   padding: 20px;
   max-width: 600px;
 
+
+  .toast{
+    position: absolute;
+    top: 110px;
+  }
   h2 {
     font-size: 1rem;
     margin-bottom: 20px;
