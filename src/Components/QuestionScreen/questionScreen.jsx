@@ -5,6 +5,7 @@ import { AppWrapper, QuizWrapper } from './questionScreenStyled';
 import Congratulations from '../Congratulations/congratulations';
 
 
+
 const Quiz = (props) => {
   const imagens = {
     l1q1_a: require('../../assets/images/levels/level1/level1_3.png'),
@@ -46,15 +47,40 @@ const Quiz = (props) => {
 
 
   const getImagens = type => imagens[type] || null;
+
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
+  const [isAnswerCorrect, setIsAnswerCorrect] = useState(null);
   const questions = props.questions;
-  
   const level = props.level;
 
   const tryAgain = () => toast('Tente outra vez.', {
     time: 2000,
   });
+
+
+  const handleAnswerClick = (answerIndex) => {
+    const currentQuestion = questions[currentQuestionIndex];
+    if (isAnswerCorrect === null) {
+      const isCorrect = currentQuestion.options[answerIndex].answerIndex;
+      setSelectedAnswerIndex(answerIndex);
+      setIsAnswerCorrect(isCorrect);
+
+      // Aguardar 2 segundos antes de avançar para a próxima pergunta ou reiniciar
+      setTimeout(() => {
+        if (isCorrect) {
+            setCurrentQuestionIndex(currentQuestionIndex + 1);
+        }else{
+          tryAgain()
+        }
+        // Resetar o estado das respostas
+        setSelectedAnswerIndex(null);
+        setIsAnswerCorrect(null);
+      }, 1000);
+    }
+  };
+  
+  
 
   const showImage = url => {
     if (url) {
@@ -64,44 +90,39 @@ const Quiz = (props) => {
   };
 
   const showVideo = url =>{
-    return <iframe width="560" height="315" src={`https://www.youtube.com/embed/${currentQuestion.video.url}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    return <iframe width="560" height="315" src={`https://www.youtube.com/embed/${questions[currentQuestionIndex].video.url}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
   }
-  
 
-
-  const handleAnswerClick = (selectedAnswerIndex) => {
-    const currentQuestion = questions[currentQuestionIndex];
-    if (selectedAnswerIndex === currentQuestion.options.findIndex((option) => option.answerIndex)) {
-      setSelectedAnswer(null);
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-    } else {
-      setSelectedAnswer(selectedAnswerIndex);
-      tryAgain();
-
-    }
-  }
-
-  const currentQuestion = questions[currentQuestionIndex];
-  const renderQuestion = () => {
-
+  const renderQuestion = () =>{
     return (
       <QuizWrapper>
-          <Helmet htmlAttributes={{lang:'pt-Br'}}>
-              <title>{ `Fase ${ props.level}` }</title>
-          </Helmet>
-        {currentQuestion.isVideo ? showVideo(currentQuestion.video.url) : showImage(currentQuestion.image.url)}
-        <h2>{currentQuestion.question}</h2>
-        <ul>
-          {currentQuestion.options.map(({ id, text }, index) => (
-            <li key={id}
-                onClick={() => handleAnswerClick(index)}
-                className={selectedAnswer === index ? 'selected' : ''}>
-              {text}
-            </li>
-          ))}
-        </ul>
-      </QuizWrapper>
+        <Helmet htmlAttributes={{lang:'pt-Br'}}>
+            <title>{ `Fase ${ props.level}` }</title>
+        </Helmet>
+      {questions[currentQuestionIndex].isVideo ? showVideo(questions[currentQuestionIndex].video.url) : showImage(questions[currentQuestionIndex].image.url)}
+      <h2>{questions[currentQuestionIndex].question}</h2>
+      <ul>
+        {questions[currentQuestionIndex].options.map(({ id, text }, index) => (
+          <li key={id}
+              onClick={() => handleAnswerClick(index)}
+              style={{
+                backgroundColor:
+                  selectedAnswerIndex !== null &&
+                  selectedAnswerIndex === index &&
+                  isAnswerCorrect === false
+                    ? "red" // cor vermelha para resposta incorreta
+                    : selectedAnswerIndex !== null &&
+                      selectedAnswerIndex === index &&
+                      isAnswerCorrect === true
+                    ? "green" // cor verde para a resposta correta
+                    : "#07377A"
+              }}>
+            {text}
+          </li>
+        ))}
+      </ul>
+  </QuizWrapper>
     );
   }
 
@@ -113,11 +134,13 @@ const Quiz = (props) => {
     );
   } else {
     return (
-      <AppWrapper style={currentQuestion.isWhiteBackground ? { backgroundColor: "white" } : { backgroundColor: "#F2C824" }}>
+      <AppWrapper style={questions[currentQuestionIndex].isWhiteBackground ? { backgroundColor: "white" } : { backgroundColor: "#F2C824" }}>
         {renderQuestion()}
       </AppWrapper>
     );
   }
+  
 };
+
 
 export default Quiz;

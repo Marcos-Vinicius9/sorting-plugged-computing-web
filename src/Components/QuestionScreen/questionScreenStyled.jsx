@@ -50,9 +50,10 @@ export const QuizWrapper = styled.div`
     font-weight: bold;
     text-align:center;  
 
-    &.selected {
-      background-color: red;
-    }
+  }
+
+  & .wrong{
+    background-color: red;
   }
 
   img {
