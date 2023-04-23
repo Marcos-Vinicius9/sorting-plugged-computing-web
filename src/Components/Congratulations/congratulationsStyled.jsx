@@ -58,7 +58,7 @@ export const Container = styled.div`
   }
 
   .nav-buttons{
-    width: 20%;
+    width: 45%;
     display: flex;
     justify-content: space-around;
   }
