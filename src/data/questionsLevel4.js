@@ -22,7 +22,7 @@ const questions = [
         { id: 1, text: "Quicksort", answerIndex: true },
         { id: 2, text: "Insertion Sort", answerIndex: false},
         { id: 3, text: "Ambos foram equivalentes", answerIndex: false },
-        { id: 4, text: "Nenhum é bom o suficiente", answerIndex: true },
+        { id: 4, text: "Nenhum é bom o suficiente", answerIndex: false },
       ]
     },
     {
@@ -34,9 +34,7 @@ const questions = [
           },
         options: [
           { id: 1, text: "Quicksort", answerIndex: false},
-          { id: 2, text: "Insertion Sort", answerIndex: true},
-          { id: 3, text: "Ambos foram equivalentes", answerIndex: false },
-          { id: 4, text: "Nenhum é bom o suficiente", answerIndex: true },
+          { id: 2, text: "Insertion Sort", answerIndex: true}
         ]
       },
       {
@@ -155,9 +153,9 @@ const questions = [
           },
         options: [
           { id: 1, text: "Quicksort", answerIndex: true},
-          { id: 2, text: "Insertion Sort", answerIndex: true},
-          { id: 3, text: "Ambos foram equivalentes", answerIndex: true},
-          { id: 4, text: "Nenhum é bom o suficiente", answerIndex: true},
+          { id: 2, text: "Insertion Sort", answerIndex: false},
+          { id: 3, text: "Ambos foram equivalentes", answerIndex: false},
+          { id: 4, text: "Nenhum é bom o suficiente", answerIndex: false},
         ]
       },
   ];
