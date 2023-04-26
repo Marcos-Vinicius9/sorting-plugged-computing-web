@@ -6,7 +6,7 @@ const level4_page1 = ()=> {
         <LevelScreen
         level={4}
         image={level4_1}
-        description="Agora vamos comparar os métodos Ordenação por Inserção e Quicksort."
+        description="Agora vamos comparar os métodos de Ordenação por Inserção e Quicksort."
         nextLevel="/level4-2"
         />
     )
