@@ -13,7 +13,7 @@ const questions = [
   },
     {
       id: 2,
-      question: "De acordo com o vídeo, qual método de ordenação foi o mais rápido?",
+      question: "De acordo com o vídeo, qual método de ordenação foi o mais rápido para os dados utilizados?",
       image: {
         name:null,
         url:"l4q1_a"
