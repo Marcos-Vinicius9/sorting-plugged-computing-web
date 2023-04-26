@@ -146,7 +146,7 @@ const questions = [
       },
       {
         id: 13,
-        question: "Se você tiver de mandar um computador colocar em ordem alfabética 1000 fichas e quiser que isso seja feito mais rápido qual algoritmo utilizaria?",
+        question: "Se você tiver de mandar um computador colocar em ordem alfabética 1000 fichas que estão totalmente foram de ordem e quiser que isso seja feito mais rápido qual algoritmo utilizaria?",
         image: {
             name:null,
             url:"l4q3_j"

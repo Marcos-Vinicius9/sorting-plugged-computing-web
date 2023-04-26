@@ -95,7 +95,7 @@ const questions = [
       },
       {
         id: 9,
-        question: "Segundo o método de ordenação que estamos utilizando, os números menores ficam à esquerda e os maiores ficam à direita. Portanto as cartas 6 e 7 ficaram a direita da carta 5 e nenhuma carta ficará à esquerda. ",
+        question: "Segundo o método de ordenação que estamos utilizando, os números menores ficam à esquerda e os maiores ficam à direita. Portanto as cartas 6 e 7 ficaram à direita da carta 5 e nenhuma carta ficará à esquerda. ",
         isWhiteBackground : true,
         image: {
             name:null,
