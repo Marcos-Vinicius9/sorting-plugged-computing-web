@@ -39,7 +39,7 @@ const questions = [
       },
       {
         id: 4,
-        question: "É bem mais fácil encontrar informações quando elas estão ordenadas. Você já imaginou como seria difícil encontrar o significado de uma palavra de uma palavra em um dicionário se as palavras não estivessem em ordem alfabética?",
+        question: "É bem mais fácil encontrar informações quando elas estão ordenadas. Você já imaginou como seria difícil encontrar o significado de uma palavra em um dicionário se as palavras não estivessem em ordem alfabética?",
         isWhiteBackground : true,
         image: {
             name:null,
