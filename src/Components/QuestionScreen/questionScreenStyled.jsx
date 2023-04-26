@@ -72,7 +72,7 @@ export const QuizWrapper = styled.div`
 
     li{
       width:350px;
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
 
     iframe{
