@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 import { Container } from "./congratulationsStyled";
 import congratulations from '../../assets/images/congratulations/win_level.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse} from '@fortawesome/free-solid-svg-icons';
-import { faArrowRightRotate} from '@fortawesome/free-solid-svg-icons';
+import {faHouse, faArrowRightRotate, faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 const Congratulations = (props) => {
     const level = props.level;
 
     const houseIcon = <FontAwesomeIcon icon={faHouse} size="2x"/>
     const reloadIcon = <FontAwesomeIcon icon={faArrowRightRotate} size="2x"/>
+    const nextLevelIcon = <FontAwesomeIcon icon={faArrowRight} size="2x"/>
 
     return(
         <Container>
@@ -35,6 +35,13 @@ const Congratulations = (props) => {
                     <div class="nav-btn">
                     <div class="containerButton">
                         {reloadIcon}
+                    </div>
+                </div>
+                </Link>
+                <Link to={`/level${level+1}-1`} >
+                    <div class="nav-btn">
+                    <div class="containerButton">
+                        {nextLevelIcon}
                     </div>
                 </div>
                 </Link>
