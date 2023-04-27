@@ -63,6 +63,16 @@ export const Container = styled.div`
     justify-content: space-around;
   }
 
+  .close-container{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+
+  .close-button{
+    color: #07377A;
+  }
+
   @media(max-width: 900px) and (min-width:770px){
     & div img{
     width:80%;
