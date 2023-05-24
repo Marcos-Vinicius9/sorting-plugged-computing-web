@@ -26,7 +26,7 @@ CardLevel.propTypes = {
     image: PropTypes.string.isRequired,
     level: PropTypes.number.isRequired,
     description: PropTypes.string.isRequired
-  }; 
+}; 
 
 
 export default CardLevel;

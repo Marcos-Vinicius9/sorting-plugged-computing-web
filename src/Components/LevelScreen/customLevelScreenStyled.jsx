@@ -45,8 +45,6 @@ export const Container = styled.div`
 
 @media(max-width: 770px) and (min-width:340px){
   
- 
-
   & div img{
     width:80%;
   }

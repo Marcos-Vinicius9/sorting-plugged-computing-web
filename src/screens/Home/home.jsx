@@ -1,16 +1,16 @@
 
 import { Link } from 'react-router-dom';
 import capa from '../../assets/images/home/capa.png';
-import {Helmet} from 'react-helmet';
- 
+import { Helmet } from 'react-helmet';
+
 import styles from './home.module.css';
 
 
 
-const index = () =>{
-    return(
+const index = () => {
+    return (
         <div class={styles.container}>
-            <Helmet htmlAttributes={{lang:'pt-Br'}}>
+            <Helmet htmlAttributes={{ lang: 'pt-Br' }}>
                 <title>Computação Plugada Ordenação</title>
             </Helmet>
             <div class={styles.content}>
@@ -20,7 +20,7 @@ const index = () =>{
                     <button type="button" class={styles.btn}>INICIAR</button>
                 </Link>
             </div>
-      </div>
+        </div>
     )
 }
 

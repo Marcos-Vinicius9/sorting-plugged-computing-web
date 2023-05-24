@@ -5,9 +5,9 @@ import questionsLevel2 from '../../../data/questionsLevel2'
 
 
 
-const level2_page3 = () =>{
-    return(
-        <QuestionScreen image={level2_4} questions={questionsLevel2} level={2}/>
+const level2_page3 = () => {
+    return (
+        <QuestionScreen image={level2_4} questions={questionsLevel2} level={2} />
     );
 }
 

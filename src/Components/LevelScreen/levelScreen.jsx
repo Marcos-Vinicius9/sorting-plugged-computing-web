@@ -21,7 +21,9 @@ const levelScreen = (props) =>{
                     {props.description}
                 </p>
             </div>
-            <div><Link to={props.nextLevel}><FontAwesomeIcon icon={faAngleRight} size="3x"/></Link></div>
+            <div>
+                <Link to={props.nextLevel}><FontAwesomeIcon icon={faAngleRight} size="3x"/></Link>
+            </div>
         </Container>
     );
 }
