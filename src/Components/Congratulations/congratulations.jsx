@@ -45,7 +45,7 @@ const Congratulations = (props) => {
                             </div>
                         </div>
                     </Link>
-                    <Link to={`/level${level + 1}-1`} >
+                    <Link to={level == 4 ? `/LevelSelection` : `/level${level + 1}-1`} >
                         <div class="nav-btn">
                             <div class="containerButton">
                                 {nextLevelIcon}
