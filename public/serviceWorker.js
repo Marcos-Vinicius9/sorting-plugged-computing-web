@@ -50,8 +50,8 @@ const urlsToCache = [
   "/static/media/level4_7.70403358aa4225d656ce.png",
   "/static/media/level4_9.1dd4e8154af5d71b8c29.png",
   "/static/media/win_level.4ef895937597378c844a.png",
-  "static/logo192.png",
-  "static/logo512.png"
+  "/static/logo192.png",
+  "/static/logo512.png"
 ];
 
 self.addEventListener("install", (event) => {
