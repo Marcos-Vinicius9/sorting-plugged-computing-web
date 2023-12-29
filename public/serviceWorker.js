@@ -50,6 +50,8 @@ const urlsToCache = [
   "/static/media/level4_7.70403358aa4225d656ce.png",
   "/static/media/level4_9.1dd4e8154af5d71b8c29.png",
   "/static/media/win_level.4ef895937597378c844a.png",
+  "static/logo192.png",
+  "static/logo512.png"
 ];
 
 self.addEventListener("install", (event) => {
@@ -65,6 +67,7 @@ self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
       return cachedResponse || fetch(event.request).catch(() => {
+        
         return caches.match("/index.html");
       });
     })
