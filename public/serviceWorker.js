@@ -10,7 +10,6 @@ const urlsToCache = [
   "/static/js/main.chunk.js",
   "/static/js/787.4011f769.chunk.js",
   "/static/js/main.e6227ddf.js",
-  "/static/js/787.4011f769.chunk.js",
   "/static/js/main.f332a08d.js",
 
   
