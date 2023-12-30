@@ -3,11 +3,17 @@ const urlsToCache = [
   "/",
   "/index.html",
   "/manifest.json",
+
+  //js
   "/static/js/bundle.js",
   "/static/js/0.chunk.js",
   "/static/js/main.chunk.js",
   "/static/js/787.4011f769.chunk.js",
   "/static/js/main.e6227ddf.js",
+  "/static/js/787.4011f769.chunk.js",
+  "/static/js/main.f332a08d.js",
+
+  
   "/static/css/main.3e6eb097.css",
   "/static/media/capa.54d9defe78cc01ffedde.png",
   "/static/media/leve1_1.53b672f0d9c91ba88254.png",
