@@ -6,7 +6,7 @@ const urlsToCache = [
 
   //js
   "/static/js/787.c1c1c87e.chunk.js",
-  "/static/js/main.0bc054e6.js",
+  "/static/js/main.fd6cdfdd.js",
 
   //css
   "/static/css/main.3e6eb097.css",
