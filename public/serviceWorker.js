@@ -5,18 +5,14 @@ const urlsToCache = [
   "/manifest.json",
 
   //js
-  "/static/js/bundle.js",
-  "/static/js/0.chunk.js",
-  "/static/js/main.chunk.js",
-  "/static/js/787.4011f769.chunk.js",
-  "/static/js/main.e6227ddf.js",
-  "/static/js/main.f332a08d.js",
+  "/static/js/787.c1c1c87e.chunk.js",
+  "/static/js/main.e4677b42.js",
 
   //css
   "/static/css/main.3e6eb097.css",
   "/static/css/main.9d23d751.css",
 
-  //images
+  //media
   "/static/media/capa.54d9defe78cc01ffedde.png",
   "/static/media/leve1_1.53b672f0d9c91ba88254.png",
   "/static/media/level1.b3fc561ae2d3839ea292.png",
@@ -58,6 +54,9 @@ const urlsToCache = [
   "/static/media/level4_7.70403358aa4225d656ce.png",
   "/static/media/level4_9.1dd4e8154af5d71b8c29.png",
   "/static/media/win_level.4ef895937597378c844a.png",
+  "/static/media/level2.3b671fbf5cf529624b99.mp4",
+  "/static/media/level3.16e7ed7360e619dedf69.mp4",
+  "/static/media/level4.ba07262e5414a556e5e1.mp4",
   "/logo192.png",
   "/logo512.png"
 ];

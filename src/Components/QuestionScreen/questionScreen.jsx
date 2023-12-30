@@ -4,8 +4,6 @@ import { Helmet } from 'react-helmet';
 import { AppWrapper, QuizWrapper } from './questionScreenStyled';
 import Congratulations from '../Congratulations/congratulations';
 
-
-
 const Quiz = (props) => {
   const imagens = {
     l1q1_a: require('../../assets/images/levels/level1/level1_3.png'),
@@ -45,8 +43,15 @@ const Quiz = (props) => {
     l4q3_j: require('../../assets/images/levels/level4/level4_14.png'),
   };
 
+  const videos = {
+    l2_mp4: require('../../assets/videos/level2.mp4'),
+    l3_mp4: require('../../assets/videos/level3.mp4'),
+    l4_mp4: require('../../assets/videos/level4.mp4')
+  }
+
 
   const getImagens = type => imagens[type] || null;
+  const getVideos = type => videos[type] || null;
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
@@ -89,9 +94,14 @@ const Quiz = (props) => {
     return null;
   };
 
+  //Devido à implementação do PWA, vídeos que antes eram reproduzidos via Iframe (YouTube) agora são reproduzidos localmente.
   const showVideo = url => {
-    return <iframe width="560" height="315" src={`https://www.youtube.com/embed/${questions[currentQuestionIndex].video.url}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    return <video controls
+    src={getVideos(url)}
+    width="560"
+    height="315">
 
+    </video>
   }
 
   const renderQuestion = () => {
