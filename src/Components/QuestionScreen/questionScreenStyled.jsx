@@ -62,7 +62,7 @@ export const QuizWrapper = styled.div`
     margin-bottom: 20px;
   }
 
-  iframe{
+  video{
     max-height: 700px;
     margin: 20px 0;
   }
@@ -75,7 +75,7 @@ export const QuizWrapper = styled.div`
       font-size: 1rem;
     }
 
-    iframe{
+    video{
       width: 100%;
       max-height: 380px;
     }
