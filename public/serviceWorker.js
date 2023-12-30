@@ -12,8 +12,11 @@ const urlsToCache = [
   "/static/js/main.e6227ddf.js",
   "/static/js/main.f332a08d.js",
 
-  
+  //css
   "/static/css/main.3e6eb097.css",
+  "/static/css/main.9d23d751.css",
+
+  //images
   "/static/media/capa.54d9defe78cc01ffedde.png",
   "/static/media/leve1_1.53b672f0d9c91ba88254.png",
   "/static/media/level1.b3fc561ae2d3839ea292.png",
